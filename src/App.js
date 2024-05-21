@@ -20,7 +20,7 @@ const App = () => {
     }
 
     useEffect(() => {
-        searchMovies('spiderman');
+        searchMovies('avatar');
     }, []);
 
     return(

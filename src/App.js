@@ -35,7 +35,7 @@ const App = () => {
                 />
 
                <img 
-                src='{searchIcon}'
+                src={searchIcon}
                 alt='search icon'
                 onClick={() => searchMovies(searchTerm)}
                 /> 
@@ -48,8 +48,8 @@ const App = () => {
                 ? (
                     <div className='container'>
                         {
-                        movies.map((movie) => (
-                            <MovieCard movie={movie}/>
+                        movies.map((movie, index) => (
+                            <MovieCard  key={index} movie={movie}/>
                         ))
                         };
                     </div>
@@ -62,5 +62,6 @@ const App = () => {
         </div>
     );
 }
+
 
 export default App;

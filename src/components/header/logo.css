@@ -1,0 +1,104 @@
+
+:root {
+    --delay-duration: 4s;
+  
+    --text-glow-color: #e50813;
+    --text-glow-color-outer: hsl(216, 100%, 17%);
+  
+    --ring-glow-color: rgb(252, 54, 97);
+    --ring-glow-color-outer: #e50813;
+  }
+  
+  @font-face {
+    font-family: "Gillies Gothic Light";
+    src: url("https://raw.githubusercontent.com/robole/title-sequences/main/cocktail/gillies-gothic-light.otf");
+    font-display: block;
+  }
+  
+  .mylogo {
+    position: relative;
+  
+    color: #e50813;
+  
+    font-family: "Gillies Gothic Light", cursive;
+    font-size: 38px;
+    font-weight: 500;
+    background-color: black;
+  
+    rotate: -10deg;
+  
+    opacity: 0.3;
+  
+    animation-name: on-text, off-text;
+    
+    animation-delay: 0s, var(--delay-duration);
+    animation-timing-function: ease-in, ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1, 1;
+  }
+  
+  @keyframes on-text {
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 1;
+      text-shadow: -2px 0 10px rgba(0, 0, 0, 0.4), 0 0 5px var(--text-glow-color),
+        0 0 10px var(--text-glow-color), 0 0 15px var(--text-glow-color),
+        0 0 20px var(--text-glow-color), 0 0 25px var(--text-glow-color),
+        0 0 30px var(--text-glow-color), 0 0 35px var(--text-glow-color-outer),
+        0 0 50px var(--text-glow-color-outer),
+        0 0 60px var(--text-glow-color-outer);
+    }
+  }
+  
+  @keyframes off-text {
+    70% {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+      
+    }
+  }
+  
+  .mylogo::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+  
+    border-radius: 50%;
+    width: 50px;
+    aspect-ratio: 1/1;
+    z-index: -1;
+    border: 4px solid rgb(255, 230, 230);
+    animation-name: on-ring, off-ring;
+    animation-delay: 0s, var(--delay-duration);
+    animation-timing-function: ease-in, ease-out;
+    animation-fill-mode: forwards, forwards;
+    animation-iteration-count: 1, 1;
+  }
+  
+  @keyframes on-ring {
+    to {
+      filter: drop-shadow(0 0 5px var(--ring-glow-color))
+        drop-shadow(0 0 10px var(--ring-glow-color))
+        drop-shadow(0 0 15px var(--ring-glow-color))
+        drop-shadow(0 0 30px var(--ring-glow-color-outer))
+        drop-shadow(0 0 40px var(--ring-glow-color-outer));
+    }
+  }
+  
+@media screen and (width:768px) {
+    .mylogo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 32px;
+    }
+    .mylogo::before {
+        width: 40px;
+    }
+}

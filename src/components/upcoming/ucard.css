@@ -1,0 +1,13 @@
+@media only screen and (max-width: 768px) {
+    .control-btn .next {
+      position: absolute;
+      top: 100%;
+       right: 2%;
+      }
+      .control-btn .prev {
+      position: absolute;
+      top: 100%;
+      left: 2%;
+      z-index: 1;
+    }
+}

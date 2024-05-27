@@ -1,0 +1,144 @@
+.upcoming .contents {
+  top: 20px;
+}
+
+.upcoming-movies .contents {
+   top: 20px;
+}
+.upcoming-movies .heading h1 {
+  margin: 300px 0 0 10px;
+}
+.upcoming-movies .heading a {
+  margin: 300px 0 0 10px;
+}
+.latest-movies .contents {
+  position: relative;
+  top: 20px;
+}
+/* Common styles for all Upcomming sections */
+.upcome .heading h1 {
+  z-index: 999;
+  font-size: 24px;
+  padding: 20px;
+  color: #fff;
+}
+
+.upcome .heading a {
+  padding: 20px;
+  color: #e50813;
+  text-decoration: none;
+}
+
+/*---------------control-btn-------------*/
+.upcome .control-btn button{
+  background: none;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, .3);
+}
+
+.upcome .control-btn .prev {
+  top: 100px;
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  z-index: 1;
+}
+
+.upcome .control-btn .next {
+  top: 100px;
+  position: absolute;
+  top: 40%;
+   right: 2%;
+   z-index: 1;
+}
+
+@media screen and (max-width:768px) {
+  .upcoming .contents {
+    top: 0px;
+  }
+  .upcome .heading h1 {
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  .upcome .heading a {
+    font-size: 18px;
+    padding: 10px;
+  }
+  .upcoming-movies .MovieBox {
+     top: 10px;
+     height: 250px;
+  }
+  .recommended-movies .MovieBox {
+    top: 10px;
+    height: 250px;
+ }
+  .latest-movies .MovieBox {
+    top: 10px;
+    height: 250px;
+ }
+ .upcoming-movies .MovieBox .text{
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  padding: 70px 20px;
+  z-index: -1;
+ }
+ 
+ .recommended-movies .MovieBox .text{
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  padding: 70px 20px;
+  z-index: -1;
+ }
+ .recommended-movies .MovieBox button{
+  padding: 10px;
+  font-size: 12px;
+}
+ .upcoming-movies .MovieBox button{
+  padding: 10px;
+  font-size: 12px;
+}
+.latest-movies .MovieBox button {
+  padding: 10px;
+  font-size: 12px;
+}
+  .upcoming-movies .heading h1 {
+    margin: 440px 0 0 10px;
+    font-size: 18px;
+  }
+  .upcoming-movies .heading a {
+    margin: 440px 0 0 10px;
+  }
+  .recommended-movies .heading h1 {
+    margin: 480px 0 0 10px;
+    padding: 10px;
+    font-size: 18px;
+  }
+  .recommended-movies .heading a {
+    margin: 480px 0 0 10px;
+    padding: 10px;
+  }
+  .upcome .control-btn .next {
+    top: 30%;
+    right: 0;
+  }
+  
+  .upcome .control-btn .prev {
+    top: 30%;
+    left: 0;
+  }
+  .recommended-movies .control-btn .next {
+    top: 80%;
+    right: 0;
+  }
+  
+  .recommended-movies .control-btn .prev {
+    top: 80%;
+    left: 0;
+  }
+}

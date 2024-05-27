@@ -56,7 +56,7 @@
 }
 
 @media screen and (max-width:768px) {
-  .upcoming .contents {
+  .upcoming-movies .contents {
     top: 0px;
   }
   .upcome .heading h1 {

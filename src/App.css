@@ -87,8 +87,8 @@ header button {
     display: block;
   }
   header ul li{
-    margin-top: 30px;
-    padding: 0 50px;
+    margin-top: 10px;
+    padding: 10px;
   }
   .navMenu-list{
     transition: 1s all;

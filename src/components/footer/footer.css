@@ -39,21 +39,15 @@ footer {
   width: 28%;
   padding: 10px;
 }
-<<<<<<< HEAD
 .col2 p, .col3 p{
   padding: 10px;
 }
 .col2, .col3 {
   height: 220px;
-=======
-
-.col2, .col3 {
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
   background-color: #121212;
   padding: 15px;
   border-radius: calc(0.5 * var(--m))
 }
-<<<<<<< HEAD
 .social i {
   font-size: 30px;
 }
@@ -100,18 +94,5 @@ p{
   }
   .social i {
     font-size: 25px;
-=======
-a {
-  text-decoration: none;
-}
-
-@media screen and (max-width: 700px) {
-  footer {
-    flex-direction: column;
-    padding: 10px;
-  }
-  .col {
-    width: 100%;
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
   }
 }

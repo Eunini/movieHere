@@ -6,22 +6,20 @@ import SinglePage from './components/watch/SinglePage';
 import UpcomingMovies from './components/singlepage/UpcomingMovies';
 import LatestMovies from './components/singlepage/LatestMovies';
 import RecommendedMovies from './components/singlepage/RecommendedMovies';
-import './App.css';
 
-const App = () => {
-    return (
-      <Router>
+export const App = () => {
+  return (
+    <Router>
       <Header />
       <Routes>
-          <Route path='/' element={<HomePages />} />
-          <Route path='/upcoming' element={<UpcomingMovies />} />
-          <Route path='/latest' element={<LatestMovies />} />
-          <Route path='/trending' element={<RecommendedMovies />} />
-          <Route path='/SinglePage/:id' element={<SinglePage />} />
+        <Route path='/' element={<HomePages />} />
+        <Route path='/series' element={<UpcomingMovies />} />
+        <Route path='/movies' element={<LatestMovies />} />
+        <Route path='/latest' element={<LatestMovies />} />
+        <Route path='/contact' element={<RecommendedMovies />} />
+        <Route path='/SinglePage/:id' element={<SinglePage />} />
       </Routes>
       <Footer />
-  </Router>
-      );
-}
-
-export default App;
+    </Router>
+  );
+};

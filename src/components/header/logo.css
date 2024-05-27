@@ -17,14 +17,8 @@
   
   .mylogo {
     position: relative;
-<<<<<<< HEAD
     color: #e50813;
     text-transform: uppercase;
-=======
-  
-    color: #e50813;
-  
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
     font-family: "Gillies Gothic Light", cursive;
     font-size: 38px;
     font-weight: 500;
@@ -73,54 +67,27 @@
     position: absolute;
     display: inline-block;
     content: "";
-<<<<<<< HEAD
-=======
-  
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
     border-radius: 50%;
     width: 50px;
     aspect-ratio: 1/1;
     z-index: -1;
-<<<<<<< HEAD
 
     animation-name: on-ring, off-ring;
 
-=======
-    border: 4px solid rgb(255, 230, 230);
-    animation-name: on-ring, off-ring;
-    animation-delay: 0s, var(--delay-duration);
-    animation-timing-function: ease-in, ease-out;
-    animation-fill-mode: forwards, forwards;
-    animation-iteration-count: 1, 1;
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
   }
   
   @keyframes on-ring {
     to {
-<<<<<<< HEAD
       filter: drop-shadow(0 0 5px var(--ring-glow-color));
-=======
-      filter: drop-shadow(0 0 5px var(--ring-glow-color))
-        drop-shadow(0 0 10px var(--ring-glow-color))
-        drop-shadow(0 0 15px var(--ring-glow-color))
-        drop-shadow(0 0 30px var(--ring-glow-color-outer))
-        drop-shadow(0 0 40px var(--ring-glow-color-outer));
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
     }
   }
   
 @media screen and (width:768px) {
     .mylogo {
-<<<<<<< HEAD
         position: relative;
         margin: 10px auto;
         justify-content: center;
         align-items: center;
-=======
-        position: absolute;
-        top: 0;
-        left: 0;
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
         font-size: 32px;
     }
     .mylogo::before {

@@ -34,11 +34,7 @@ body {
     line-height: 25px;
     margin-top: 20px;
   }
-<<<<<<< HEAD
-  .soical {
-=======
   .social {
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
     display: flex;
     justify-content: left;
     align-items: center;
@@ -47,10 +43,6 @@ body {
     border-bottom: 1px solid #575757;
     padding: 8px 0;
   }
-<<<<<<< HEAD
-  .soical img {
-=======
   .social img {
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
     margin-left: 10px;
   }

@@ -1,80 +1,253 @@
 :root {
-    --color: #e50813;
-  }
-  .home {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  color: #fff;
+  --color: #e50813;
+}
+.home {
+position: absolute;
+top: 0;
+left: 0;
+height: 100vh;
+width: 100%;
+color: #fff;
 }
 .homeContainer {
-  position: relative;
+position: relative;
 }
 .coverImage {
-  position: absolute;
-  top: 0;
-  width: 100%;
-<<<<<<< HEAD
-  height: 140vh;
-=======
-  height: 138vh;
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
-  object-fit: cover;
-  z-index: -2;
+position: absolute;
+top: 0;
+width: 100%;
+height: 140vh;
+object-fit: cover;
+z-index: -2;
 }
 .coverImage img {
-  top: 0;
-  width: 100vw;
-<<<<<<< HEAD
-  height: 140vh;
-=======
-  height: 138vh;
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
-  object-fit: cover;
+top: 0;
+width: 100vw;
+height: 140vh;
+object-fit: cover;
 }
 .homeContainer .content {
-  width: 100%;
-  padding: 100px;
+width: 100%;
+padding: 100px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
 .homeContainer h1 {
-  margin-top: 80px;
-  font-size: 90px;
-  text-transform: uppercase;
-  font-weight: 800;
-  background-image: url("../../../public/images/texure.jpg");
-  background-repeat: repeat;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-font-smoothing: antialiased;
+margin-top: 80px;
+font-size: 90px;
+text-transform: uppercase;
+font-weight: 800;
+background-image: url("../../../public/images/texure.jpg");
+background-repeat: repeat;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-font-smoothing: antialiased;
 }
 .coverImage::after {
-  content: "";
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 140vh;
+z-index: 88;
+background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+.homeContainer .rating {
+  margin: 30px 0;
+  width: 100%;
+}
+.rating i {
+  color: var(--color);
+  margin-right: 5px;
+}
+.rating label {
+  margin: 0 20px;
+}
+.rating span {
+  background-color: #6c757d;
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+.homeContainer .cast {
+  margin: 30px 0;
+}
+.cast h4 {
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+.cast h4 span {
+  color: var(--color);
+}
+.flex {
+  display: flex;
+  padding: 10px;
+}
+.row {
+  width: 50%;
+}
+.playButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.playButton .img {
+  position: relative;
+}
+.change {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-<<<<<<< HEAD
-  height: 140vh;
-=======
-  height: 138vh;
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
-  z-index: 88;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  opacity: 0;
 }
-  .homeContainer .rating {
-    margin: 30px 0;
-    width: 100%;
+.playButton img {
+  width: 90px;
+  height: 90px;
+  margin-right: 20px;
+}
+.playButton button:hover .change {
+  opacity: 1;
+}
+.playButton button {
+  cursor: pointer;
+  padding: 0;
+  margin: 10px 0;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+.margin {
+  margin-top: 50%;
+}
+p {
+  line-height: 30px;
+}
+/*---------------global-------------*/
+/*---------------control-btn-------------*/
+.control-btn button{
+  background: none;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, .3);
+}
+.control-btn .next {
+  position: absolute;
+  top: 40%;
+   right: 2%;
+   z-index: 1;
   }
-  .rating i {
-    color: var(--color);
-    margin-right: 5px;
+  .control-btn .prev {
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  z-index: 1;
+      }
+
+      /*---------------control-btn-------------*/
+.heading h1 {
+  font-weight: 500;
+  margin: 30px 0;
+  color: #fff;
+}
+.heading a {
+  color: var(--color);
+}
+
+/*---------------MovieBox-------------*/
+
+.MovieBox {
+top: 10px;
+width: 430px;
+height: 400px;
+position: relative;
+transition: 0.5s;
+color: white;
+border-left: 5px solid transparent;
+z-index: 1;
+}
+.MovieBox:hover {
+cursor: pointer;
+border-left: 5px solid #e50813;
+transform: scale3d(1.1, 1.1, 1) translate3d(6%, 0, 0) perspective(31.25em);
+box-shadow: 0px 0px 0.75em rgba(0, 0, 0, 0.9);
+z-index: 3;
+}
+.MovieBox::after {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 430px;
+height: 500px;
+background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(20, 20, 20, 0.4) 50%, rgba(83, 100, 141, 0) 100%);
+z-index: -1;
+}
+.MovieBox img {
+position: absolute;
+top: 0;
+left: 0;
+z-index: -2;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.MovieBox .text {
+padding: 70px 50px;
+z-index: -1;
+}
+.MovieBox h3 {
+font-weight: 500;
+margin-bottom: 15px;
+}
+.MovieBox button {
+margin-top: 15px;
+padding: 12px 20px;
+font-size: 13px;
+cursor: pointer;
+}
+.MovieBox button i {
+margin-right: 10px;
+}
+/*---------------MovieBox-------------*/
+
+@media only screen and (max-width: 768px) {
+  .homeContainer h1 {
+    font-size: 50px;
+    margin: 0;
+  }
+  .home {
+    position: relative;
+    margin: 0;
+    height: 60vh !important;
+  }
+  .rate{
+    display: flex;
+    flex-direction: row;
+  }
+  .coverImage {
+    height: 140vh !important;
+  }
+  .coverImage img {
+    width: 100vw;
+    height: 140vh !important;
+  }
+  .coverImage::after {
+    height: 140vh !important;
+  }
+  .home .content {
+    flex-direction: column;
+    padding: 50px;
+  }
+  .homeContainer .rating {
+    margin: 20px 0;
   }
   .rating label {
     margin: 0 20px;
@@ -86,262 +259,35 @@
     font-weight: bold;
   }
   .homeContainer .cast {
-    margin: 30px 0;
+    margin: 20px 0;
   }
   .cast h4 {
     font-weight: 500;
     margin-bottom: 10px;
-    font-size: 17px;
+    font-size: 16px;
+  }
+  .cast h4:nth-of-type(3) {
+    margin-bottom: 30px;
   }
   .cast h4 span {
-    color: var(--color);
-  }
-  .flex {
-    display: flex;
-    padding: 10px;
-  }
-  .row {
-    width: 50%;
-  }
-  .playButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .playButton .img {
-    position: relative;
-  }
-  .change {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-  }
-  .playButton img {
-    width: 90px;
-    height: 90px;
-    margin-right: 20px;
-  }
-  .playButton button:hover .change {
-    opacity: 1;
-  }
-  .playButton button {
-    cursor: pointer;
-    padding: 0;
-<<<<<<< HEAD
-    margin: 10px 0;
-=======
-    margin: 0;
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
-    background: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    transition: 0.5s;
-  }
-  .margin {
-    margin-top: 50%;
+    font-size: 15px;
   }
   p {
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 18px;
   }
-  /*---------------global-------------*/
-/*---------------control-btn-------------*/
-  .control-btn button{
-    background: none;
-    padding: 0;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, .3);
+  .MovieBox {
+    top: 320px;
+    width: 430px;
+    height: 500px;
   }
-  .control-btn .next {
-    position: absolute;
-    top: 40%;
-     right: 2%;
-     z-index: 1;
-    }
-    .control-btn .prev {
-    position: absolute;
-    top: 40%;
-    left: 2%;
-    z-index: 1;
-        }
-
-        /*---------------control-btn-------------*/
-  .heading h1 {
-<<<<<<< HEAD
-    font-weight: 500;
-    margin: 30px 0;
-=======
-    font-weight: 500;margin: 30px 0;
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
-    color: #fff;
+  .home .row {
+    width: 100%;
   }
-  .heading a {
-    color: var(--color);
+  .home .playButton {
+    display: none;
   }
-
-  /*---------------MovieBox-------------*/
-
-.MovieBox {
-<<<<<<< HEAD
-  top: 10px;
-=======
-  top: 180px;
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
-  width: 430px;
-  height: 500px;
-  position: relative;
-  transition: 0.5s;
-  color: white;
-  border-left: 5px solid transparent;
-<<<<<<< HEAD
-  z-index: 1;
-=======
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
-}
-.MovieBox:hover {
-  cursor: pointer;
-  border-left: 5px solid #e50813;
-  transform: scale3d(1.1, 1.1, 1) translate3d(6%, 0, 0) perspective(31.25em);
-  box-shadow: 0px 0px 0.75em rgba(0, 0, 0, 0.9);
-<<<<<<< HEAD
-  z-index: 3;
-=======
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
-}
-.MovieBox::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 430px;
-  height: 00px;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(20, 20, 20, 0.4) 50%, rgba(83, 100, 141, 0) 100%);
-  z-index: -1;
-}
-.MovieBox img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -2;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.MovieBox .text {
-  padding: 70px 50px;
-<<<<<<< HEAD
-  z-index: -1;
-=======
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
-}
-.MovieBox h3 {
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-.MovieBox button {
-  margin-top: 15px;
-  padding: 12px 20px;
-  font-size: 13px;
-  cursor: pointer;
-}
-.MovieBox button i {
-  margin-right: 10px;
-}
-/*---------------MovieBox-------------*/
-
-  @media only screen and (max-width: 768px) {
-<<<<<<< HEAD
-=======
-    .control-btn .next {
-      position: absolute;
-      top: 20%;
-       right: 2%;
-      }
-      .control-btn .prev {
-      position: absolute;
-      top: 20%;
-      left: 2%;
-      z-index: 999;
-          }
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
-    .homeContainer h1 {
-      font-size: 50px;
-      margin: 0;
-    }
-    .home {
-      position: relative;
-      margin: 0;
-      height: 60vh !important;
-    }
-    .rate{
-      display: flex;
-      flex-direction: row;
-    }
-    .coverImage {
-      height: 140vh !important;
-    }
-    .coverImage img {
-      width: 100vw;
-      height: 140vh !important;
-    }
-<<<<<<< HEAD
-    .coverImage::after {
-      height: 140vh !important;
-    }
-=======
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
-    .home .content {
-      flex-direction: column;
-      padding: 50px;
-    }
-    .homeContainer .rating {
-      margin: 20px 0;
-    }
-    .rating label {
-      margin: 0 20px;
-    }
-    .rating span {
-      background-color: #6c757d;
-      padding: 5px;
-      color: #fff;
-      font-weight: bold;
-    }
-    .homeContainer .cast {
-      margin: 20px 0;
-    }
-    .cast h4 {
-      font-weight: 500;
-      margin-bottom: 10px;
-      font-size: 16px;
-    }
-    .cast h4:nth-of-type(3) {
-      margin-bottom: 30px;
-    }
-    .cast h4 span {
-      font-size: 15px;
-    }
-    p {
-      font-size: 16px;
-      line-height: 18px;
-    }
-    .MovieBox {
-      top: 320px;
-      width: 430px;
-      height: 500px;
-    }
-    .home .row {
-      width: 100%;
-    }
-    .home .playButton {
-      display: none;
-    }
-    .margin {
-      margin-top: 0% !important;
-    }
+  .margin {
+    margin-top: 0% !important;
   }
+}

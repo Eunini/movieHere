@@ -4,10 +4,7 @@ import Ucard from "./Ucard"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-<<<<<<< HEAD
 import './ucard.css'
-=======
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
 
 const SampleNextArrow = (props) => {
   const { onClick } = props
@@ -29,11 +26,7 @@ const SamplePrevArrow = (props) => {
     </div>
   )
 }
-<<<<<<< HEAD
 const Upcomming = ({ items, title, className }) => {
-=======
-const Upcomming = ({ items, title }) => {
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
   const settings = {
     dots: false,
     infinite: true,
@@ -54,7 +47,6 @@ const Upcomming = ({ items, title }) => {
   }
   return (
     <>
-<<<<<<< HEAD
       <section className={`upcome ${className}`}>
         <div className='container'>
           <div className='heading '>
@@ -62,15 +54,6 @@ const Upcomming = ({ items, title }) => {
             <Link to='/'>View All</Link>
           </div>
           <div className='contents'>
-=======
-      <section className='upcome'>
-        <div className='container'>
-          <div className='heading flexSB'>
-            <h1>{title}</h1>
-            <Link to='/'>View All</Link>
-          </div>
-          <div className='content'>
->>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
             <Slider {...settings}>
               {
               items.map((item) => {

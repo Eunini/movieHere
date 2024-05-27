@@ -6,9 +6,12 @@
   border: 0;
   box-sizing: border-box;
   color: white;
+<<<<<<< HEAD
 }
 html {
   scroll-behavior: smooth;
+=======
+>>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
 }
 :root {
   --font-roboto: "Roboto Slab", serif;
@@ -27,6 +30,7 @@ ul{
   list-style-type: none;
   transition: 2s;
 }
+<<<<<<< HEAD
 ul li {
   padding: 0 10px;
 }
@@ -38,6 +42,11 @@ ul li {
 }
 .heading {
   display: flex;
+=======
+.flexSB {
+  display: flex;
+  margin: 10px auto;
+>>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
   justify-content: space-between;
   align-items: center;
 }
@@ -76,7 +85,60 @@ header button {
 .heading a{
   color: var(--color);
 }
+<<<<<<< HEAD
 
+=======
+.movieBox {
+  top: 180px;
+  width: 430px;
+  height: 350px;
+  position: relative;
+  transition: .5s;
+  border-left: 3px solid transparent;
+  color: white;
+}
+
+.movieBox:hover {
+  cursor: pointer;
+  border-left: 5px solid var(--color);
+  transform: scale3d(1.1,1.1,1) translate3d(6%, 0, 0) perspective(31.25em);
+  box-shadow: 0 0 0.73em rgba(0,0,0,.5);
+}
+
+.movieBox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 430px;
+  height: 350px;
+  z-index: -1;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8)0%, rgba(20, 20, 20, 0.4)50%, rgba(83, 100, 141, 0), 100%);
+}
+.MovieBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 430px;
+  height: 350px;
+  object-fit: cover;
+}
+.MovieBox .text {
+  padding: 70px 50px;
+}
+.MovieBox h3 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.MovieBox button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+>>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
 @media only screen and (max-width:768px) {
   header nav .flexSB{
     display: none;
@@ -99,7 +161,11 @@ header button {
     top: 0;
     left: 0;
     background-color: var(--color);
+<<<<<<< HEAD
     width: 60%;
+=======
+    width: 50%;
+>>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
     height: 100vh;
     z-index: 2;
   }
@@ -113,6 +179,7 @@ header button {
     cursor: pointer;
     background: none;
   }
+<<<<<<< HEAD
 
   @keyframes fadeInLeft {
     from {
@@ -153,6 +220,47 @@ header button {
   .navLink:nth-child(6) {
     animation-delay: 0.6s;
   }  
+=======
+  /* Add this to your CSS file */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+  .navLink {
+    opacity: 0; /* Start hidden */
+    animation: fadeInLeft 1s forwards;
+  }
+
+  .navLink:nth-child(1) {
+    animation-delay: 0.1s; 
+  }
+
+  .navLink:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .navLink:nth-child(3) {
+    animation-delay: 0.3s; 
+  }
+
+  .navLink:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  .navLink:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  .navLink:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+  
+>>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
 }
 
 h1 {

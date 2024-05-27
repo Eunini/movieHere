@@ -1,30 +1,46 @@
+<<<<<<< HEAD
 .trending-movies {
   margin-top: 200px;
   border-radius: 10px;
 }
 
+=======
+.trending {
+    margin-top: 50px;
+  }
+>>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
   .trending h1 {
     font-size: 60px;
     margin-top: 0;
   }
   @media only screen and (max-width: 768px) {
+<<<<<<< HEAD
     .trending-movies {
       margin-top: 30px;
       border-radius: 10px;
     } 
 
+=======
+>>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
     .trending h1 {
       font-size: 50px;
       margin: 0;
     }
     .trending {
+<<<<<<< HEAD
       top: 50px;
+=======
+>>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
       position: relative;
       height: 60vh !important;
     }
     .trending .coverImage img {
       width: 100vw;
+<<<<<<< HEAD
       height: 130vh !important;
+=======
+      height: 70vh !important;
+>>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
     }
     .trending .content {
       flex-direction: column;
@@ -33,7 +49,11 @@
     .trending .row {
       width: 100%;
     }
+<<<<<<< HEAD
     .trending .playButton {
+=======
+    .trending .palyButton {
+>>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
       display: none;
     }
   }

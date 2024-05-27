@@ -33,6 +33,15 @@ const SinglePage = () => {
                 <p>Get access to the direct Project Overview with this report. Just by a quick glance, you’ll have an idea of the total tasks allotted to the team, number of milestones given & completed, total Links created for the project and the total time taken by all the users. Each section would elaborate the data further, if chosen.</p>
                 <p>Get access to the direct Project Overview with this report. Just by a quick glance, you’ll have an idea of the total tasks allotted to the team, number of milestones given & completed, total Links created for the project and the total time taken by all the users. Each section would elaborate the data further, if chosen.</p>
               </div>
+<<<<<<< HEAD
+=======
+              <div className='social'>
+                <h3>Share : </h3>
+                <img src='https://img.icons8.com/color/48/000000/facebook-new.png' alt=""/>
+                <img src='https://img.icons8.com/fluency/48/000000/twitter-circled.png' alt=""/>
+                <img src='https://img.icons8.com/fluency/48/000000/linkedin-circled.png' alt=""/>
+              </div>
+>>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
             </div>
           </section>
           <Upcomming items={rec} title='Recommended Movies' />

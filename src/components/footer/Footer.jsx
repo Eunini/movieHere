@@ -10,6 +10,7 @@ const Footer = () => {
           <p>Made with <span style={{ color: '#BA6573' }}>❤</span> by INIOLUWA ATANDA</p>
           <div className="social">
             <a href="https://codepen.io/Juxtopposed" target="_blank" rel="noopener noreferrer" className="link">
+<<<<<<< HEAD
             <i class="fa-brands fa-github"></i>
             </a>
             <a href="https://twitter.com/juxtopposed" target="_blank" rel="noopener noreferrer" className="link">
@@ -17,6 +18,15 @@ const Footer = () => {
             </a>
             <a href="https://youtube.com/@juxtopposed" target="_blank" rel="noopener noreferrer" className="link">
             <i class="fa fa-phone"></i>
+=======
+              
+            </a>
+            <a href="https://twitter.com/juxtopposed" target="_blank" rel="noopener noreferrer" className="link">
+              <img src="https://assets.codepen.io/9051928/x.png" alt="Twitter" />
+            </a>
+            <a href="https://youtube.com/@juxtopposed" target="_blank" rel="noopener noreferrer" className="link">
+              <img src="https://assets.codepen.io/9051928/youtube_1.png" alt="YouTube" />
+>>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
             </a>
           </div>
           <p style={{ color: '#818181', fontSize: 'smaller' }}>2024 © All Rights Reserved</p>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .upcoming .contents {
   top: 20px;
 }
@@ -141,4 +142,18 @@
     top: 80%;
     left: 0;
   }
+=======
+@media only screen and (max-width: 768px) {
+    .control-btn .next {
+      position: absolute;
+      top: 100%;
+       right: 2%;
+      }
+      .control-btn .prev {
+      position: absolute;
+      top: 100%;
+      left: 2%;
+      z-index: 1;
+    }
+>>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
 }

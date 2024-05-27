@@ -4,6 +4,7 @@
     background-image: linear-gradient(to right bottom, rgba(0,0,0,0.9),rgba(0,0,0,0.9),rgba(0,0,0,0.5),rgba(0,0,0,0.6),rgba(0,0,0,0));
     color: white;
     position: relative;
+<<<<<<< HEAD
     justify-content: space-evenly;
     z-index: 999;
 }
@@ -18,3 +19,13 @@ header i {
         height: 10vh;
     }
 }
+=======
+    z-index: 999;
+}
+
+header a {
+    color: white;
+    margin-left: 30px;
+    cursor: pointer;
+} 
+>>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9

@@ -3,7 +3,11 @@ import Home from "../home/Home"
 import "./Trending.css"
 import { trending } from '../../dummyData';
 
+<<<<<<< HEAD
 const Trending = ({ className }) => {
+=======
+const Trending = () => {
+>>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
     const [items, setItems] = useState([]);
   
     useEffect(() => {
@@ -17,7 +21,11 @@ const Trending = ({ className }) => {
 
   return (
     <>
+<<<<<<< HEAD
       <section className={`trending ${className}`}>
+=======
+      <section className='trending'>
+>>>>>>> 0c5fe7a8fe5ef5142ecbfc360060fe60633b98f9
         <Home items={items}/>
       </section>
     </>
